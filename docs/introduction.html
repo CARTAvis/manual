@@ -1,0 +1,223 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &#8212; CARTA 0.9 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation and Configuration" href="installation_and_configuration.html" />
+    <link rel="prev" title="CARTA - Cube Analysis and Rendering Tool for Astronomy" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="installation_and_configuration.html" title="Installation and Configuration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="CARTA - Cube Analysis and Rendering Tool for Astronomy"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CARTA 0.9 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/carta_logo_v2.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#future-plan">Future plan</a></li>
+<li><a class="reference internal" href="#code-contributors">Code contributors</a></li>
+<li><a class="reference internal" href="#acknowledgement">Acknowledgement</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">CARTA - Cube Analysis and Rendering Tool for Astronomy</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="installation_and_configuration.html"
+                        title="next chapter">Installation and Configuration</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>CARTA is the Cube Analysis and Rendering Tool for Astronomy, a new image visualization
+tool designed for the ALMA, the JVLA, and the radio telescopes of the future such as the SKA.
+It adopts the server-client architecture which is suitable for visualizing images with
+large file sizes (GB to TB) easily obtained from ALMA or JVLA observations. It is practically
+difficult to process such a huge file with personal computer or laptop. Therefore,
+by adopting the server-client architecture, computation and data storage are handled
+by remote enterprise-class servers with high performance storages, while processed products
+are sent to client side only for visualization. This architecture also enables users
+to interact with the ALMA and JVLA science archives by using CARTA as an interface.</p>
+<p>CARTA has two distributions: CARTA-server and CARTA-desktop. The former is designed for
+handling large datasets as mentioned above, while the later is suitable for small datasets
+which can be handled with personal computer or laptop. This document will be focusing on
+the usage of the CARTA-desktop distribution. The difference of the two distributions is
+that CARTA-server distribution has an additional feature called <em>shared session</em>, which
+allows users at different places to have view and control CARTA for collaborative work
+concurrently via internet browsers such as Safari or Google Chrome. CARTA-server
+distribution is not publicly available. For people who want to use CARTA-server as the
+user interface for their image archive, please contact <a class="reference external" href="mailto:carta_helpdesk&#37;&#52;&#48;asiaa&#46;sinica&#46;edu&#46;tw">carta_helpdesk<span>&#64;</span>asiaa<span>&#46;</span>sinica<span>&#46;</span>edu<span>&#46;</span>tw</a>
+for more information. CARTA supports macOS and CentOS Linux operating systems. CARTA-server
+distribution is only available for Linux. Please refer to
+<a class="reference internal" href="installation_and_configuration.html#link-installation-configuration"><span class="std std-ref">Installation and Configuration</span></a> for detailed information.</p>
+<p>CARTA provides a flexible UI layout which allows users to configure <em>what</em> functionalities
+to use and <em>where</em> to place them for different science needs. The following figure is an
+example. The Section <a class="reference internal" href="about_gui.html#link-about-gui"><span class="std std-ref">Graphical User Interface</span></a> introduces this feature. Users can also use
+command lines or scripts to interact with CARTA. Examples and tutorials are given in the
+Section <a class="reference internal" href="about_python.html#link-about-python"><span class="std std-ref">Python Interface</span></a>. With the <em>version 0.9</em>, CARTA provides the following
+functionalities for image visualization and analysis:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">imageViewer</span></code></li>
+<li><code class="docutils literal"><span class="pre">colormap</span></code></li>
+<li><code class="docutils literal"><span class="pre">animator</span></code></li>
+<li><code class="docutils literal"><span class="pre">imageZoom</span></code></li>
+<li><code class="docutils literal"><span class="pre">imageContext</span></code></li>
+<li><code class="docutils literal"><span class="pre">histogram</span></code></li>
+<li><code class="docutils literal"><span class="pre">statistics</span></code></li>
+<li><code class="docutils literal"><span class="pre">profiler</span></code></li>
+</ul>
+<div class="figure" id="link-figure-demo-layout">
+<img alt="_images/carta_demo_screenshot.png" src="_images/carta_demo_screenshot.png" />
+</div>
+<p>Detailed description of the functionalities is provided in Section <a class="reference internal" href="functionalities_gui.html#link-functionalities-gui"><span class="std std-ref">Functionalities - GUI</span></a>
+and relevant Python commands are described in Section <a class="reference internal" href="functionalities_python.html#link-functionalities-python"><span class="std std-ref">Functionalities - Python</span></a>. To have an
+idea on how to interact with CARTA, we strongly recommend first-time users to follow the short hands-on
+tutorial given in Section <a class="reference internal" href="a_quick_hands_on.html#link-a-quick-hands-on"><span class="std std-ref">A Quick Hands-on</span></a>.</p>
+</div>
+<div class="section" id="future-plan">
+<h2>Future plan<a class="headerlink" href="#future-plan" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Interactive CLEAN with CASA tclean task</li>
+<li>Channel maps</li>
+<li>Interactive position-velocity maps</li>
+<li>Moment maps</li>
+<li>Volume rendering</li>
+<li>Spatial profiler</li>
+<li>Virtual observatory</li>
+<li>Spectral line catalogue</li>
+</ul>
+</div>
+<div class="section" id="code-contributors">
+<h2>Code contributors<a class="headerlink" href="#code-contributors" title="Permalink to this headline">¶</a></h2>
+<p>List of contributors since Feb. 2014 (as of Sep. 2017):</p>
+<ul class="simple">
+<li>Erh-Chung Chen (ASIAA)</li>
+<li>Cheng-Chin Chiang     (ASIAA)</li>
+<li>Jamie Dassoulas (University of Alberta)</li>
+<li>Pavol Federl (University of Calgary)</li>
+<li>Chia-Jung Hsu (ASIAA)</li>
+<li>Grimmer Kang (ASIAA)</li>
+<li>Susan Loveland (NRAO)</li>
+<li>Anthony Moraghan (ASIAA)</li>
+<li>Adrianna Pińska (IDIA)</li>
+<li>Erik Rosolowsky (University of Alberta)</li>
+<li>Alex Strilets</li>
+<li>Ville Suoranta (NRAO)</li>
+<li>Jeff Taylor (University of Alberta)</li>
+<li>Kuo-Song Wang (ASIAA)</li>
+<li>Ally Wu</li>
+<li>Julie Yao (ASIAA)</li>
+</ul>
+</div>
+<div class="section" id="acknowledgement">
+<h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h2>
+<p>(2014/02 ~ 2016/08) We are grateful for the support of several sponsoring organizations:
+CARTA was developed through the ALMA Development Program administered by NRAO with key
+contributions from CANARIE. Remote visualization (the Server version) relies on the PureWeb
+technology developed by Calgary Scientific.</p>
+<p>(since 2016/08) Remote visualization (the Server version) relies on the PureWeb technology developed
+by Calgary Scientific.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="installation_and_configuration.html" title="Installation and Configuration"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="CARTA - Cube Analysis and Rendering Tool for Astronomy"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CARTA 0.9 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, the CARTA team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>

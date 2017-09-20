@@ -1,0 +1,161 @@
+.. _link_installation_configuration:
+
+==============================
+Installation and Configuration
+==============================
+CARTA-desktop supports two operating systems: macOS and CentOS/Ubutu Linux. CARTA-server, 
+with the additional capability of ``shared session``, only supports CentOS/Ubutu Linux 
+operating system and is not publicly available. For people who want to use CARTA-server as the 
+user interface for their image archive, please contact carta_helpdesk@asiaa.sinica.edu.tw 
+for more information. CARTA-desktop can be retrieved at 
+https://github.com/CARTAvis/carta/releases/tag/v0.9
+
+macOS 
+-----
+CARTA supports the latest two versions of macOS. Currently, they are 
+
+* ``10.12 Sierra``
+* ``10.11 El Capitan``
+
+Earlier versions may be supported, but they are not tested.
+
+To install CARTA on macOS, please follow the steps below:
+
+Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.dmg
+
+Step 2: Double click on the dmg file and drag the CARTA application to the */Applications* 
+folder on your Mac. You may install CARTA to the directory other than */Applications*.
+
+.. figure:: figures/carta_drag_install.png
+   :width: 600 px
+
+Step 3: Double click on the CARTA icon at */Applications* and you will see a prompt window
+complaining that it is from an unidentified developer. No worry, we are doing good things 
+to the world.
+
+.. figure:: figures/carta_unidentified_developer.png
+   :width: 600 px
+
+Step 4: Go to *System Preferences*, then *Security & Privacy* and click on ``Open Anyway``
+button.
+
+.. figure:: figures/carta_security_open_anyway.png  
+   :width: 600 px
+
+
+Step 5: Confirm to open CARTA by click on ``Open`` button. 
+
+.. figure:: figures/carta_open_anyway.png
+   :width: 600 px
+
+Now CARTA should be launched successfully. A *CARTA* folder with sample images 
+and a hidden *.cartavis* folder where you can find logs and configuration file 
+are copied to your *home* directory.
+
+.. figure:: figures/carta_open_successfully_mac.png     
+   
+
+
+Linux
+-----
+CARTA supports the following Linux distributions:
+
+* ``CentOS 7 / Redhat 7``
+* ``CentOS 6 / Redhat 6``
+* ``Ubuntu 16.04 LTS`` 
+
+Other Linux distributions may be supported, but they are not tested.
+
+To install CARTA on Linux, please follow the steps below:
+
+Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.tar.gz 
+You may use ``wget`` to retrieve the package::
+
+  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.tar.gz"
+
+Step 2: Extract the package by::
+
+  tar -xvf CARTA_0.9.tar.gz
+
+Step 3: Launch CARTA by executing ``carta.sh``::
+
+  ./CARTA_0.9/bin/carta.sh
+
+Now CARTA should be launched successfully. A *CARTA* folder with sample images 
+and a hidden *.cartavis* folder where you can find logs and configuration file 
+are copied to your *home* directory.
+
+.. figure:: figures/carta_open_successfully_linux.png
+
+
+
+Installing Python Interface
+---------------------------
+
+.. figure:: figures/TBA.png
+   :width: 300 px
+
+Configuring CARTA
+-----------------
+
+Plugin configuration
+^^^^^^^^^^^^^^^^^^^^
+
+CARTA is built on a *plugin* model and can be configured by a ``json`` file if desired. The default
+plugin configuration should work for most of users. The plugin configuration file 
+is located at::
+
+  <your home>/.cartavis/config.json
+
+and the default plugin configuration looks like::
+
+  {
+    "_comment" : "List of plugin directories",
+    "pluginDirs": [
+        "$(APPDIR)/../plugins",
+        "$(APPDIR)/../../../../plugins"
+    ],
+    "disabledPlugins" : [""],
+    "plugins": {
+        "PCacheSqlite3" : {
+            "dbPath": "$(HOME)/CARTA/cache/pcache.sqlite"
+        }
+    },
+    "qtDecorations" : "true",
+    "percentileApproximation" : "true",
+    "percentApproxDividedNum" : 1000000
+}
+  
+If you want to disable a certain plugin, for example ``PCacheSqlite3``,
+you can add ``"PCacheSqlite3"`` to the ``"disabledPlugins"`` list. 
+
+
+Preference configuration
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+CARTA provides the following user configurable options:
+
+* percentile approximation::
+
+  "percentileApproximation" : "true",
+  "percentApproxDividedNum" : 1000000
+
+  By default, CARTA adopts an approximation algorithm to find the clipping values 
+  in the image cube in order to provide good performance for big image cube. Note that
+  with this approximation algorithm (1000000 histogram bins), the bounding values of a 
+  certain clipping percentage may differ a bit from the exact values.
+
+* sqlite cache::
+
+  "PCacheSqlite3" : {"dbPath": "$(HOME)/CARTA/cache/pcache.sqlite"}
+
+  CARTA adopts sqlite database to cache data values in order to enhance performance. 
+  For example, the minimum and maximum values of a certain image cube will be cached 
+  in sqlite database so that when this image cube is opened for the second time, the 
+  step of finding minimum and maximum values is skipped (usually very expensive for big 
+  image cubes). Note that currently CARTA uses the file name of the image as the key in 
+  sqlite database. Therefore, the cached values are not applicable to a totally different 
+  image with an identical file name. Users may manually remove the cache at 
+  <your home>/CARTA/cache/pcache.sqlite. CARTA team will improve this aspect in the 
+  near future. 
+

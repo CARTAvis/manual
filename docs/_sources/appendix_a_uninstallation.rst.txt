@@ -1,0 +1,23 @@
+==========================
+Appendix A: Uninstallation
+==========================
+
+We feel sorry to hear that you are leaving CARTA. The following sections are the 
+procedures to fully remove CARTA in your system.
+
+
+macOS
+-----
+1. remove ``CARTA.app`` at ``/Application`` (if CARTA is installed at default directory)
+   or at your customized directory. 
+2. remove the directories ``CARTA`` and ``.cartavis`` at your home directory.
+
+
+
+Linux
+-----
+
+1. remove ``CARTA_0.9`` folder.
+2. remove the directories ``CARTA`` and ``.cartavis`` at your home directory.
+
+
