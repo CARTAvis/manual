@@ -1,0 +1,71 @@
+.. _link_a_quick_hands_on:
+
+################
+A Quick Hands-on
+################
+
+Assuming you just received your exciting ALMA/JVLA image cubes and want to have 
+a glance, this section provides a step by step guide to learn how to use CARTA to 
+
+1. open an image cube with ``imageViewer``, then
+2. select a color palette to render the image cube with ``colormap``, then
+3. navigate through different channels with ``animator``, then
+4. use mouse to perform *zoom* and *pan* operations
+
+For more detailed descriptions, please refer to the Sections :ref:`link_about_gui` and
+:ref:`link_functionalities_gui`.
+
+**Step 0**: Launch CARTA and we should see a window like the following figure. This is the 
+pre-defined default layout with different panels assigned to different functionalities.
+
+.. figure:: figures/carta_open_successfully_mac.png
+
+**Step 1**: Open an image cube with ``imageViewer``. Click the dropdown menu called ``data`` 
+at the *menu bar* and click ``open`` to open up the file browser. 
+
+.. figure:: figures/quick_tutorial_step1.png
+
+CARTA includes some sample images at the default lookup path::
+  
+  <your home>/CARTA/Images
+
+In this tutorial, we will open *HD163296_CO_2_1_zoom.image.fits* by clicking the ``load``
+button. Don't forget to click the ``close`` button to close the file browser. Now we should 
+see a window like the following figure, which includes ``imageViewer``, ``colormap``, 
+``animator`` and ``statistics``. Note that the content of the *menu bar* is dynamic. This 
+means that it only shows the options belonging to an activated panel assigned to a specific 
+functionality. The following figure demonstrates that ``imageViewer`` is being activated 
+(highlighted in cyan color) with the options like *Clipping*, *Zoom Reset*, etc., in the *menu bar*.
+
+.. figure:: figures/quick_tutorial_step1_1.png
+
+**Step 2**: Select a color palette to render the image cube with ``colormap``. The default 
+color palette of the raster image is gray in linear scale between the minimum and maximum 
+pixel values of the whole image cube. To change to other color palette, click the 
+``colormap`` panel to activate it. We should see the menu bar updates accordingly. Use 
+the dropdown menu to select *nipy_spectral*, for example. Now we should see a window like 
+the following figure.
+
+.. figure:: figures/quick_tutorial_step2.png
+
+**Step 3**: Navigate through different channels with ``animator``. First of all, activate 
+``animator`` by clicking the panel. Again, we should see the menu bar is updated. Then, 
+use the horizontal slide bar to navigate through different channels. In the following figure,
+we stop at channel 26. You may use the cursor to hover over the control buttons to see what
+they can do. For example, you can click the second button from the right to start playing the
+animation and use the middle button to stop playing.
+
+.. figure:: figures/quick_tutorial_step3.png
+
+**Step 4**: Use mouse to perform *zoom* and *pan* operations. CARTA relies on mouse operations
+to zoom and pan your image. By scrolling up/down, you can zoom in/out the image. Note that if 
+you want to inspect a feature, you can hover over it before scrolling up to zoom in. The feature 
+you hovered over will be focused on while zooming in. If you want to focus on a feature without
+changing the zoom level, simply by double-clicking on the feature. You can reset the zoom level 
+and re-center the image by click ``Zoom Reset`` button and ``Pan Reset`` button, respectively. Try
+to see if you can reproduce the image in the following figure.
+
+.. figure:: figures/quick_tutorial_step4.png
+
+Congratulations! You have completed this quick hands-on tutorial. Now try to open your own exciting
+images with CARTA and make a great discovery!
