@@ -124,7 +124,7 @@ and the default plugin configuration looks like::
     "qtDecorations" : "true",
     "percentileApproximation" : "true",
     "percentApproxDividedNum" : 1000000
-}
+  }
   
 If you want to disable a certain plugin, for example ``PCacheSqlite3``,
 you can add ``"PCacheSqlite3"`` to the ``"disabledPlugins"`` list. 
