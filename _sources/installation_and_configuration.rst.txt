@@ -21,7 +21,7 @@ Earlier versions may be supported, but they are not tested.
 
 To install CARTA on macOS, please follow the steps below:
 
-Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.dmg
+Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg
 
 Step 2: Double click on the dmg file and drag the CARTA application to the */Applications* 
 folder on your Mac. You may install CARTA to the directory other than */Applications*.
@@ -46,7 +46,7 @@ button.
 Step 5: Confirm to open CARTA by click on ``Open`` button. 
 
 .. figure:: figures/carta_open_anyway.png
-   :width: 600 px
+   :width: 400 px
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
 and a hidden *.cartavis* folder where you can find logs and configuration file 
@@ -68,18 +68,18 @@ Other Linux distributions may be supported, but they are not tested.
 
 To install CARTA on Linux, please follow the steps below:
 
-Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.tar.gz 
+Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz 
 You may use ``wget`` to retrieve the package::
 
-  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA.tar.gz"
+  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz"
 
 Step 2: Extract the package by::
 
-  tar -xvf CARTA_0.9.tar.gz
+  tar -xvf CARTA-0.9r-centos.tgz
 
 Step 3: Launch CARTA by executing ``carta.sh``::
 
-  ./CARTA_0.9/bin/carta.sh
+  CARTA-0.9r-centos.tgz/bin/carta.sh
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
 and a hidden *.cartavis* folder where you can find logs and configuration file 
