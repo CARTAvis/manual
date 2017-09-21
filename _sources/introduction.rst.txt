@@ -100,3 +100,9 @@ technology developed by Calgary Scientific.
 (since 2016/08) Remote visualization (the Server version) relies on the PureWeb technology developed 
 by Calgary Scientific.
 
+Copyright and License
+---------------------
+The information of copyright and license is accessible in the ``CARTA`` menu.
+
+.. figure:: figures/carta_copyright_license.png
+   :width: 600 px
