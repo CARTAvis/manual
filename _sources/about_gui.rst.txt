@@ -129,7 +129,7 @@ Example layouts
 
 .. figure:: figures/carta_demo_layout2.png
 
-.. figure:: figures/carta_demo_screenshot_backup.png
+.. figure:: figures/carta_demo_screenshot.png
 
 
 

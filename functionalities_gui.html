@@ -60,6 +60,7 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Functionalities - GUI</a><ul>
+<li><a class="reference internal" href="#help">Help</a></li>
 <li><a class="reference internal" href="#session">Session</a></li>
 <li><a class="reference internal" href="#for-visualization">For visualization</a><ul>
 <li><a class="reference internal" href="#imageviewer">imageViewer</a></li>
@@ -113,6 +114,22 @@
   <div class="section" id="functionalities-gui">
 <span id="link-functionalities-gui"></span><h1>Functionalities - GUI<a class="headerlink" href="#functionalities-gui" title="Permalink to this headline">¶</a></h1>
 <p>In this section, the available functionalities are introduced in detail.</p>
+<div class="section" id="help">
+<h2>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h2>
+<p>This is alway help from us (<a class="reference external" href="mailto:carta_helpdesk&#37;&#52;&#48;asiaa&#46;sinica&#46;edu&#46;tw">carta_helpdesk<span>&#64;</span>asiaa<span>&#46;</span>sinica<span>&#46;</span>edu<span>&#46;</span>tw</a>)! The same mailing
+address can be accessed in <em>Helpdesk</em> of the <code class="docutils literal"><span class="pre">Help</span></code> menu.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/carta_help_menu.png"><img alt="_images/carta_help_menu.png" src="_images/carta_help_menu.png" style="width: 400px;" /></a>
+</div>
+<p>In the same <code class="docutils literal"><span class="pre">Help</span></code> menu, the CARTA team provides:</p>
+<ul class="simple">
+<li>GitHub Home: <a class="reference external" href="https://github.com/CARTAvis/carta">https://github.com/CARTAvis/carta</a></li>
+<li>GitHub Wiki: <a class="reference external" href="https://github.com/CARTAvis/carta/wiki">https://github.com/CARTAvis/carta/wiki</a></li>
+<li>GitHub Issues: <a class="reference external" href="https://github.com/CARTAvis/carta/issues">https://github.com/CARTAvis/carta/issues</a></li>
+<li>Release: <a class="reference external" href="https://github.com/CARTAvis/carta/releases">https://github.com/CARTAvis/carta/releases</a></li>
+<li>Manual: <a class="reference external" href="https://cartavis.github.io/manual/">https://cartavis.github.io/manual/</a></li>
+</ul>
+</div>
 <div class="section" id="session">
 <h2>Session<a class="headerlink" href="#session" title="Permalink to this headline">¶</a></h2>
 <p>CARTA provides the capability to take a snapshot of the application state, called
@@ -131,7 +148,7 @@ their own preferred layouts and save the layouts only for future usage</em>.</p>
 Use <em>Session</em> -&gt; <em>Manage/Restore</em> to manage or restore saved sessions. Preference or layout
 can be restored independently if desired.</p>
 <div class="figure">
-<a class="reference internal image-reference" href="_images/session_save_restore.png"><img alt="_images/session_save_restore.png" src="_images/session_save_restore.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="_images/session_save_restore.png"><img alt="_images/session_save_restore.png" src="_images/session_save_restore.png" style="width: 800px;" /></a>
 </div>
 <p>For CARTA-server only, an ongoing session can be shared to others via <em>Session</em> -&gt; <em>Share</em>.
 A URL will show up in the status bar. Simply share it with your collaborators and use an
@@ -198,11 +215,11 @@ and <em>Labels -&gt; Color</em> sub-tabs, while the appearance of the ticks is c
 <div class="figure">
 <a class="reference internal image-reference" href="_images/imageViewer_settings_contours.png"><img alt="_images/imageViewer_settings_contours.png" src="_images/imageViewer_settings_contours.png" style="width: 600px;" /></a>
 </div>
-<p>In the example above, two sets of contours, named as <em>Default</em> and <em>Default2</em> are generated in
+<p>In the example above, two sets of contours, named as <em>Set1</em> and <em>Set2</em> are generated in
 the <em>Contour Sets</em> sub-tab. The <em>Range</em> method allows users to specify minimum and maximum levels
 for generating contours. In total, a number of contours (including the minimum and maximum levels)
 specified by <em>Level Count</em> with a spacing scheme specified by <em>spacing</em> will be generated.
-In this case, the &#8220;Default&#8221; set includes five levels in linear spacing between 0.5 and 1.0. If
+In this case, the <em>Set1</em> set includes three levels in linear spacing between 0 and 1.0. If
 <em>Minimum</em> method is chosen, a set of contour levels will be generated starting from the specified
 minimum level with a step specified by <em>interval</em> and a total number of contours specified by
 <em>Level Count</em>. &#8220;Percentile Range&#8221; method is similar to the <em>Range</em> method. Once a method and its
@@ -211,6 +228,16 @@ contour set. Press <em>Delete Contour Set</em> button to delete the contour set 
 appearance, such as line width, color, etc., of a contour set is configurable in the tab named
 as the name of the contour set. In the example here, two sets of contours are customized to have
 different colors.</p>
+<p>The <em>Smoothness</em> dropdown box allows users to select how the contours are smoothed
+(especially useful if the image is noisy). Options are:</p>
+<ul class="simple">
+<li>No line combiner (highest accuracy, high performace, artifects may be seen)</li>
+<li>Line combiner (high accuracy, less artifects, lower performace)</li>
+<li>Gaussian blur 3x3 (default, good accuracy, high performace)</li>
+<li>Gaussian blur 5x5 (good accuracy, high performace)</li>
+<li>Box blur 3x3 (good accuracy, high performace)</li>
+<li>Box blur 5x5 (good accuracy, high performace)</li>
+</ul>
 <p><strong>Image stack</strong></p>
 <p>CARTA supplies image stacking capability (experimental). In other words, three images with
 <em>identical pixel dimension and WCS information</em> can be loaded to CARTA to perform RGB color

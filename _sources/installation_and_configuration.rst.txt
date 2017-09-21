@@ -34,7 +34,7 @@ complaining that it is from an unidentified developer. No worry, we are doing go
 to the world.
 
 .. figure:: figures/carta_unidentified_developer.png
-   :width: 600 px
+   :width: 400 px
 
 Step 4: Go to *System Preferences*, then *Security & Privacy* and click on ``Open Anyway``
 button.

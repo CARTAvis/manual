@@ -5,6 +5,25 @@ Functionalities - GUI
 =====================
 In this section, the available functionalities are introduced in detail. 
 
+----
+Help
+----
+
+This is alway help from us (carta_helpdesk@asiaa.sinica.edu.tw)! The same mailing 
+address can be accessed in *Helpdesk* of the ``Help`` menu.
+
+.. figure:: figures/carta_help_menu.png
+   :width: 400 px
+
+In the same ``Help`` menu, the CARTA team provides:
+
+* GitHub Home: https://github.com/CARTAvis/carta
+* GitHub Wiki: https://github.com/CARTAvis/carta/wiki
+* GitHub Issues: https://github.com/CARTAvis/carta/issues
+* Release: https://github.com/CARTAvis/carta/releases
+* Manual: https://cartavis.github.io/manual/
+
+
 -------
 Session
 -------
@@ -28,7 +47,7 @@ Use *Session* -> *Manage/Restore* to manage or restore saved sessions. Preferenc
 can be restored independently if desired.
 
 .. figure:: figures/session_save_restore.png
-   :width: 900 px
+   :width: 800 px
 
 For CARTA-server only, an ongoing session can be shared to others via *Session* -> *Share*.
 A URL will show up in the status bar. Simply share it with your collaborators and use an
@@ -113,11 +132,11 @@ To plot contours of a given image, use the *Contour* tab.
 .. figure:: figures/imageViewer_settings_contours.png
    :width: 600 px
 
-In the example above, two sets of contours, named as *Default* and *Default2* are generated in 
+In the example above, two sets of contours, named as *Set1* and *Set2* are generated in 
 the *Contour Sets* sub-tab. The *Range* method allows users to specify minimum and maximum levels
 for generating contours. In total, a number of contours (including the minimum and maximum levels)
 specified by *Level Count* with a spacing scheme specified by *spacing* will be generated. 
-In this case, the "Default" set includes five levels in linear spacing between 0.5 and 1.0. If 
+In this case, the *Set1* set includes three levels in linear spacing between 0 and 1.0. If 
 *Minimum* method is chosen, a set of contour levels will be generated starting from the specified 
 minimum level with a step specified by *interval* and a total number of contours specified by 
 *Level Count*. "Percentile Range" method is similar to the *Range* method. Once a method and its 
@@ -126,6 +145,16 @@ contour set. Press *Delete Contour Set* button to delete the contour set specifi
 appearance, such as line width, color, etc., of a contour set is configurable in the tab named 
 as the name of the contour set. In the example here, two sets of contours are customized to have 
 different colors. 
+
+The *Smoothness* dropdown box allows users to select how the contours are smoothed 
+(especially useful if the image is noisy). Options are:
+
+* No line combiner (highest accuracy, high performace, artifects may be seen)
+* Line combiner (high accuracy, less artifects, lower performace)
+* Gaussian blur 3x3 (default, good accuracy, high performace)
+* Gaussian blur 5x5 (good accuracy, high performace)
+* Box blur 3x3 (good accuracy, high performace)
+* Box blur 5x5 (good accuracy, high performace)
 
 **Image stack**
 
