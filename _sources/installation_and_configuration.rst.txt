@@ -21,7 +21,11 @@ Earlier versions may be supported, but they are not tested.
 
 To install CARTA on macOS, please follow the steps below:
 
-Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg
+Step 1: Download CARTA at: 
+
+* http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r.dmg
+* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg
+ 
 
 Step 2: Double click on the dmg file and drag the CARTA application to the */Applications* 
 folder on your Mac. You may install CARTA to the directory other than */Applications*.
@@ -55,22 +59,47 @@ To install CARTA on Linux, please follow the steps below:
 
 Step 1: Download CARTA at:
 
-* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz 
-* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz
+* CentOS 7/6, RHEL 7/6
 
-You may use ``wget`` to retrieve the package::
+  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz
+  * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz 
 
+* Ubuntu 17.04, 16.04 LTS
+
+  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz
+  * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz
+
+You may use ``wget`` to retrieve the package.
+
+For CentOS 7/6, RHEL 7/6::
+
+  wget "http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz"
   wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz"
+
+For Ubuntu 17.04, 16.04 LTS::
+
+  wget "http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz"
   wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz"
+  
 
-Step 2: Extract the package by::
+Step 2: Extract the package.
 
+For CentOS 7/6, RHEL 7/6::
+ 
   tar -xvf CARTA-0.9r-el6-el7.tgz
+
+For Ubuntu 17.04, 16.04 LTS::
+
   tar -xvf CARTA-0.9r-ubuntu.tgz
 
-Step 3: Launch CARTA by executing ``carta.sh``::
+Step 3: Launch CARTA by executing ``carta.sh``.
+
+For CentOS 7/6, RHEL 7/6::
 
   CARTA-0.9r-el6-el7/bin/carta.sh
+
+For Ubuntu 17.04, 16.04 LTS::
+
   CARTA-0.9r-ubuntu/bin/carta.sh
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
@@ -85,19 +114,38 @@ AppImages have been gaining popularity on Linux in recent years. They are analag
 Applications on a Mac. They are a self-contained single file bundling the application 
 itself and everything it needs to run on a system. 
 
-To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):
+To use a CARTA AppImage, download the appropriate version (CentOS 7/6 and RHEL 7/6, 
+or Ubuntu 17.04, 16.04 LTS):
 
-* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage
-* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage
+* For CentOS 7/6, RHEL 7/6
 
-Make the AppImage executable::
+  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.AppImage
+  * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage
+
+* For Ubuntu 17.04, 16.04 LTS
+
+  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.AppImage
+  * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage
+
+
+Make the AppImage executable,
+
+For CentOS 7/6, RHEL 7/6::
 
   chmod +x CARTA-0.9r-el6-el7.AppImage
+
+For Ubuntu 17.04, 16.04 LTS::
+
   chmod +x CARTA-0.9r-ubuntu.AppImage
 
-and simply execute it::
+and simply execute it.
+
+For CentOS 7/6, RHEL 7/6::
 
   ./CARTA-0.9r-el6-el7.AppImage
+
+For Ubuntu 17.04, 16.04 LTS::
+
   ./CARTA-0.9r-ubuntu.AppImage
 
 

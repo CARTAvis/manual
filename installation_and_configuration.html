@@ -120,7 +120,11 @@ for more information. CARTA-desktop can be retrieved at <a class="reference exte
 </ul>
 <p>Earlier versions may be supported, but they are not tested.</p>
 <p>To install CARTA on macOS, please follow the steps below:</p>
-<p>Step 1: Download CARTA at <a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg</a></p>
+<p>Step 1: Download CARTA at:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r.dmg">http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r.dmg</a></li>
+<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg</a></li>
+</ul>
 <p>Step 2: Double click on the dmg file and drag the CARTA application to the <em>/Applications</em>
 folder on your Mac. You may install CARTA to the directory other than <em>/Applications</em>.</p>
 <div class="figure">
@@ -147,22 +151,44 @@ are copied to your <em>home</em> directory.</p>
 <p>To install CARTA on Linux, please follow the steps below:</p>
 <p>Step 1: Download CARTA at:</p>
 <ul class="simple">
+<li>CentOS 7/6, RHEL 7/6<ul>
+<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz">http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz</a></li>
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz</a></li>
+</ul>
+</li>
+<li>Ubuntu 17.04, 16.04 LTS<ul>
+<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz">http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz</a></li>
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz</a></li>
 </ul>
-<p>You may use <code class="docutils literal"><span class="pre">wget</span></code> to retrieve the package:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz&quot;</span>
+</li>
+</ul>
+<p>You may use <code class="docutils literal"><span class="pre">wget</span></code> to retrieve the package.</p>
+<p>For CentOS 7/6, RHEL 7/6:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz&quot;</span>
+<span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz&quot;</span>
+</pre></div>
+</div>
+<p>For Ubuntu 17.04, 16.04 LTS:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz&quot;</span>
 <span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz&quot;</span>
 </pre></div>
 </div>
-<p>Step 2: Extract the package by:</p>
+<p>Step 2: Extract the package.</p>
+<p>For CentOS 7/6, RHEL 7/6:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">tgz</span>
-<span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">tgz</span>
 </pre></div>
 </div>
-<p>Step 3: Launch CARTA by executing <code class="docutils literal"><span class="pre">carta.sh</span></code>:</p>
+<p>For Ubuntu 17.04, 16.04 LTS:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">tgz</span>
+</pre></div>
+</div>
+<p>Step 3: Launch CARTA by executing <code class="docutils literal"><span class="pre">carta.sh</span></code>.</p>
+<p>For CentOS 7/6, RHEL 7/6:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
-<span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>For Ubuntu 17.04, 16.04 LTS:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 <p>Now CARTA should be launched successfully. A <em>CARTA</em> folder with sample images
@@ -175,19 +201,36 @@ are copied to your <em>home</em> directory.</p>
 AppImages have been gaining popularity on Linux in recent years. They are analagous to
 Applications on a Mac. They are a self-contained single file bundling the application
 itself and everything it needs to run on a system.</p>
-<p>To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):</p>
+<p>To use a CARTA AppImage, download the appropriate version (CentOS 7/6 and RHEL 7/6,
+or Ubuntu 17.04, 16.04 LTS):</p>
 <ul class="simple">
+<li>For CentOS 7/6, RHEL 7/6<ul>
+<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.AppImage">http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.AppImage</a></li>
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage</a></li>
+</ul>
+</li>
+<li>For Ubuntu 17.04, 16.04 LTS<ul>
+<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.AppImage">http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.AppImage</a></li>
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage</a></li>
 </ul>
-<p>Make the AppImage executable:</p>
+</li>
+</ul>
+<p>Make the AppImage executable,</p>
+<p>For CentOS 7/6, RHEL 7/6:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
-<span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
 </pre></div>
 </div>
-<p>and simply execute it:</p>
+<p>For Ubuntu 17.04, 16.04 LTS:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
+</pre></div>
+</div>
+<p>and simply execute it.</p>
+<p>For CentOS 7/6, RHEL 7/6:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
-<span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
+</pre></div>
+</div>
+<p>For Ubuntu 17.04, 16.04 LTS:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
 </pre></div>
 </div>
 </div>
