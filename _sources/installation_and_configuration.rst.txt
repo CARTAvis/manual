@@ -28,16 +28,16 @@ Step 1: Download CARTA at:
  
 
 Step 2: Double click on the dmg file and drag the CARTA application to the */Applications* 
-folder on your Mac. You may install CARTA to the directory other than */Applications*.
+folder on your Mac. You may install CARTA to a directory other than */Applications*.
 
 .. figure:: figures/carta_drag_install.png
    :width: 600 px
 
-Step 3: Double click on the CARTA icon at */Applications* to start CARTA.
+Step 3: Double click on the CARTA icon in the /Applications directory to start CARTA.
 
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
-and a hidden *.cartavis* folder where you can find logs and configuration file 
+and a hidden *.cartavis* folder where you can find logs and the config.json configuration file 
 are copied to your *home* directory.
 
 .. figure:: figures/carta_open_successfully_mac.png     
