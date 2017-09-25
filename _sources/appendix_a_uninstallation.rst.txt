@@ -17,7 +17,9 @@ macOS
 Linux
 -----
 
-1. remove ``CARTA-0.9r-centos`` folder.
+1. remove ``CARTA-0.9r-el6-el7`` or ``CARTA-0.9r-ubuntu`` folder.
 2. remove the directories ``CARTA`` and ``.cartavis`` at your home directory.
 
+For AppImage, just remove it and remove the directories ``CARTA`` and ``.cartavis`` 
+at your home directory.
 
