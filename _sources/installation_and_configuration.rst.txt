@@ -29,24 +29,8 @@ folder on your Mac. You may install CARTA to the directory other than */Applicat
 .. figure:: figures/carta_drag_install.png
    :width: 600 px
 
-Step 3: Double click on the CARTA icon at */Applications* and you will see a prompt window
-complaining that it is from an unidentified developer. No worry, we are doing good things 
-to the world.
+Step 3: Double click on the CARTA icon at */Applications* to start CARTA.
 
-.. figure:: figures/carta_unidentified_developer.png
-   :width: 400 px
-
-Step 4: Go to *System Preferences*, then *Security & Privacy* and click on ``Open Anyway``
-button.
-
-.. figure:: figures/carta_security_open_anyway.png  
-   :width: 600 px
-
-
-Step 5: Confirm to open CARTA by click on ``Open`` button. 
-
-.. figure:: figures/carta_open_anyway.png
-   :width: 400 px
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
 and a hidden *.cartavis* folder where you can find logs and configuration file 
