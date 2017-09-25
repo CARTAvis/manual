@@ -138,23 +138,30 @@ are copied to your <em>home</em> directory.</p>
 <h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
 <p>CARTA supports the following Linux distributions:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">Redhat</span> <span class="pre">7</span></code></li>
-<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">6</span> <span class="pre">/</span> <span class="pre">Redhat</span> <span class="pre">6</span></code></li>
+<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">7</span></code></li>
+<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">6</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">6</span></code></li>
 <li><code class="docutils literal"><span class="pre">Ubuntu</span> <span class="pre">16.04</span> <span class="pre">LTS</span></code></li>
 </ul>
 <p>Other Linux distributions may be supported, but they are not tested.</p>
 <p>To install CARTA on Linux, please follow the steps below:</p>
-<p>Step 1: Download CARTA at <a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz</a>
-You may use <code class="docutils literal"><span class="pre">wget</span></code> to retrieve the package:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz&quot;</span>
+<p>Step 1: Download CARTA at:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz</a></li>
+<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz</a></li>
+</ul>
+<p>You may use <code class="docutils literal"><span class="pre">wget</span></code> to retrieve the package:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz&quot;</span>
+<span class="n">wget</span> <span class="s2">&quot;https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz&quot;</span>
 </pre></div>
 </div>
 <p>Step 2: Extract the package by:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">centos</span><span class="o">.</span><span class="n">tgz</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">tgz</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">tgz</span>
 </pre></div>
 </div>
 <p>Step 3: Launch CARTA by executing <code class="docutils literal"><span class="pre">carta.sh</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">centos</span><span class="o">.</span><span class="n">tgz</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 <p>Now CARTA should be launched successfully. A <em>CARTA</em> folder with sample images
@@ -162,6 +169,24 @@ and a hidden <em>.cartavis</em> folder where you can find logs and configuration
 are copied to your <em>home</em> directory.</p>
 <div class="figure">
 <img alt="_images/carta_open_successfully_linux.png" src="_images/carta_open_successfully_linux.png" />
+</div>
+<p>For this release, we also provide the CARTA Linux versions as an <em>AppImage</em> (<a class="reference external" href="https://appimage.org">https://appimage.org</a>).
+AppImages have been gaining popularity on Linux in recent years. They are analagous to
+Applications on a Mac. They are a self-contained single file bundling the application
+itself and everything it needs to run on a system. AppImage has been endorsed by
+Linus Torvalds, the father of Linux, himself.</p>
+<p>To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage</a></li>
+<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage</a></li>
+</ul>
+<p>Make the AppImage executable:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="mi">755</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
+</pre></div>
+</div>
+<p>and simply execute it:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="installing-python-interface">

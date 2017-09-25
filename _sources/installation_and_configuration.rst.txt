@@ -44,26 +44,33 @@ Linux
 -----
 CARTA supports the following Linux distributions:
 
-* ``CentOS 7 / Redhat 7``
-* ``CentOS 6 / Redhat 6``
+* ``CentOS 7 / RHEL 7``
+* ``CentOS 6 / RHEL 6``
 * ``Ubuntu 16.04 LTS`` 
 
 Other Linux distributions may be supported, but they are not tested.
 
 To install CARTA on Linux, please follow the steps below:
 
-Step 1: Download CARTA at https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz 
+Step 1: Download CARTA at:
+
+* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz 
+* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz
+
 You may use ``wget`` to retrieve the package::
 
-  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-centos.tgz"
+  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz"
+  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz"
 
 Step 2: Extract the package by::
 
-  tar -xvf CARTA-0.9r-centos.tgz
+  tar -xvf CARTA-0.9r-el6-el7.tgz
+  tar -xvf CARTA-0.9r-ubuntu.tgz
 
 Step 3: Launch CARTA by executing ``carta.sh``::
 
-  CARTA-0.9r-centos.tgz/bin/carta.sh
+  CARTA-0.9r-el6-el7/bin/carta.sh
+  CARTA-0.9r-ubuntu/bin/carta.sh
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
 and a hidden *.cartavis* folder where you can find logs and configuration file 
@@ -71,6 +78,25 @@ are copied to your *home* directory.
 
 .. figure:: figures/carta_open_successfully_linux.png
 
+
+For this release, we also provide the CARTA Linux versions as an *AppImage* (https://appimage.org).                 
+AppImages have been gaining popularity on Linux in recent years. They are analagous to 
+Applications on a Mac. They are a self-contained single file bundling the application 
+itself and everything it needs to run on a system. AppImage has been endorsed by 
+Linus Torvalds, the father of Linux, himself.
+
+To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):
+
+* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage
+* https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage
+
+Make the AppImage executable::
+
+  chmod 755 CARTA-0.9r-el6-el7.AppImage
+
+and simply execute it::
+
+  ./CARTA-0.9r-el6-el7.AppImage
 
 
 Installing Python Interface
