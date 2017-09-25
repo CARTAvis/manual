@@ -23,7 +23,7 @@ To install CARTA on macOS, please follow the steps below:
 
 Step 1: Download CARTA at: 
 
-* http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r.dmg
+* http://alma.asiaa.sinica.edu.tw/download_0.9_mac.php
 * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg
  
 
@@ -61,26 +61,14 @@ Step 1: Download CARTA at:
 
 * CentOS 7/6, RHEL 7/6
 
-  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz
+  * http://alma.asiaa.sinica.edu.tw/download_0.9_redhat.php
   * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz 
 
 * Ubuntu 17.04, 16.04 LTS
 
-  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz
+  * http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu.php
   * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz
 
-You may use ``wget`` to retrieve the package.
-
-For CentOS 7/6, RHEL 7/6::
-
-  wget "http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.tgz"
-  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz"
-
-For Ubuntu 17.04, 16.04 LTS::
-
-  wget "http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.tgz"
-  wget "https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz"
-  
 
 Step 2: Extract the package.
 
@@ -119,12 +107,12 @@ or Ubuntu 17.04, 16.04 LTS):
 
 * For CentOS 7/6, RHEL 7/6
 
-  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-el6-el7.AppImage
+  * http://alma.asiaa.sinica.edu.tw/download_0.9_redhat_appimage.php
   * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage
 
 * For Ubuntu 17.04, 16.04 LTS
 
-  * http://alma.asiaa.sinica.edu.tw/_downloads/CARTA-0.9r-ubuntu.AppImage
+  * http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu_appimage.php
   * https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage
 
 
