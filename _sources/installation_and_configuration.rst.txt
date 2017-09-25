@@ -47,7 +47,7 @@ CARTA supports the following Linux distributions:
 
 * ``CentOS 7 / RHEL 7``
 * ``CentOS 6 / RHEL 6``
-* ``Ubuntu 17.04 LTS``
+* ``Ubuntu 17.04``
 * ``Ubuntu 16.04 LTS`` 
 
 Other Linux distributions may be supported, but they are not tested.
