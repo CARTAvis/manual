@@ -11,7 +11,7 @@ for more information. CARTA-desktop can be retrieved at https://cartavis.github.
 
 macOS 
 -----
-CARTA supports the latest two versions of macOS. Currently, they are 
+CARTA supports the latest three versions of macOS. Currently, they are 
 
 * ``10.13 High Sierra``
 * ``10.12 Sierra``
