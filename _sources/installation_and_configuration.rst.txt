@@ -14,6 +14,7 @@ macOS
 -----
 CARTA supports the latest two versions of macOS. Currently, they are 
 
+* ``10.13 High Sierra``
 * ``10.12 Sierra``
 * ``10.11 El Capitan``
 
@@ -46,6 +47,7 @@ CARTA supports the following Linux distributions:
 
 * ``CentOS 7 / RHEL 7``
 * ``CentOS 6 / RHEL 6``
+* ``Ubuntu 17.04 LTS``
 * ``Ubuntu 16.04 LTS`` 
 
 Other Linux distributions may be supported, but they are not tested.
@@ -82,8 +84,7 @@ are copied to your *home* directory.
 For this release, we also provide the CARTA Linux versions as an *AppImage* (https://appimage.org).                 
 AppImages have been gaining popularity on Linux in recent years. They are analagous to 
 Applications on a Mac. They are a self-contained single file bundling the application 
-itself and everything it needs to run on a system. AppImage has been endorsed by 
-Linus Torvalds, the father of Linux, himself.
+itself and everything it needs to run on a system. 
 
 To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):
 
@@ -92,8 +93,8 @@ To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):
 
 Make the AppImage executable::
 
-  chmod 755 CARTA-0.9r-el6-el7.AppImage
-  chmod 755 CARTA-0.9r-ubuntu.AppImage
+  chmod +x CARTA-0.9r-el6-el7.AppImage
+  chmod +x CARTA-0.9r-ubuntu.AppImage
 
 and simply execute it::
 

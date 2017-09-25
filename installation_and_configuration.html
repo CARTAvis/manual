@@ -115,6 +115,7 @@ for more information. CARTA-desktop can be retrieved at
 <h2>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
 <p>CARTA supports the latest two versions of macOS. Currently, they are</p>
 <ul class="simple">
+<li><code class="docutils literal"><span class="pre">10.13</span> <span class="pre">High</span> <span class="pre">Sierra</span></code></li>
 <li><code class="docutils literal"><span class="pre">10.12</span> <span class="pre">Sierra</span></code></li>
 <li><code class="docutils literal"><span class="pre">10.11</span> <span class="pre">El</span> <span class="pre">Capitan</span></code></li>
 </ul>
@@ -140,6 +141,7 @@ are copied to your <em>home</em> directory.</p>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">7</span></code></li>
 <li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">6</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">6</span></code></li>
+<li><code class="docutils literal"><span class="pre">Ubuntu</span> <span class="pre">17.04</span> <span class="pre">LTS</span></code></li>
 <li><code class="docutils literal"><span class="pre">Ubuntu</span> <span class="pre">16.04</span> <span class="pre">LTS</span></code></li>
 </ul>
 <p>Other Linux distributions may be supported, but they are not tested.</p>
@@ -173,16 +175,15 @@ are copied to your <em>home</em> directory.</p>
 <p>For this release, we also provide the CARTA Linux versions as an <em>AppImage</em> (<a class="reference external" href="https://appimage.org">https://appimage.org</a>).
 AppImages have been gaining popularity on Linux in recent years. They are analagous to
 Applications on a Mac. They are a self-contained single file bundling the application
-itself and everything it needs to run on a system. AppImage has been endorsed by
-Linus Torvalds, the father of Linux, himself.</p>
+itself and everything it needs to run on a system.</p>
 <p>To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage</a></li>
 <li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage</a></li>
 </ul>
 <p>Make the AppImage executable:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="mi">755</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
-<span class="n">chmod</span> <span class="mi">755</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
+<span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
 </pre></div>
 </div>
 <p>and simply execute it:</p>
