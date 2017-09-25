@@ -4,7 +4,7 @@
 Installation and Configuration
 ==============================
 CARTA-desktop supports two operating systems: macOS and CentOS/Ubuntu Linux. CARTA-server, 
-with the additional capability of ``shared session``, only supports CentOS/Ubutu Linux 
+with the additional capability of ``shared session``, only supports CentOS/Ubuntu Linux 
 operating system and is not publicly available. For people who want to use CARTA-server as the 
 user interface for their image archive, please contact carta_helpdesk@asiaa.sinica.edu.tw 
 for more information. CARTA-desktop can be retrieved at 
