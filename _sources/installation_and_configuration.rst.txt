@@ -107,6 +107,9 @@ Installing Python Interface
 .. figure:: figures/TBA.png
    :width: 300 px
 
+
+.. _link_configuring_carta:
+
 Configuring CARTA
 -----------------
 

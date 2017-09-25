@@ -212,7 +212,21 @@ images. For example, by applying 98% clip, the lower bound will be set to the va
 pixel after sorting all pixels from minimum to maximum. Same applies to the upper bound which will
 be set to the value of the 99%-th pixel. In the clip menu, if *per frame* is toggled, the 
 clip calculation will only adopt the pixel of the current viewing frame, not all pixels in the
-entire image cube. 
+entire image cube. By default, CARTA adopts an approximation algorithm to find the clipping values in 
+the image cube in order to provide good performance for big image cube. Note that with this 
+approximation algorithm (1000000 histogram bins), the bounding values of a certain clipping 
+percentage may differ a bit from the exact values. This feature is configurable in the *config.json* 
+(see :ref:`link_configuring_carta` for instructions).
+
+CARTA adopts sqlite database to cache data values in order to enhance performance. 
+For example, the minimum and maximum values of a certain image cube will be cached 
+in sqlite database so that when this image cube is opened for the second time, the 
+step of finding minimum and maximum values is skipped (usually very expensive for big 
+image cubes). Note that currently CARTA uses the file name of the image as the key 
+in sqlite database. Therefore, the cached values are not applicable to a totally 
+different image with an identical file name. Users may manually remove the cache 
+at <your home>/CARTA/cache/pcache.sqlite. CARTA team will improve this aspect in the near future. 
+(see :ref:`link_configuring_carta` for instructions).
 
 .. figure:: figures/colormap_clip.png
    :width: 600 px
