@@ -37,7 +37,7 @@ Step 3: Double click on the CARTA icon in the /Applications directory to start C
 
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
-and a hidden *.cartavis* folder where you can find logs and the config.json configuration file 
+and a hidden *.cartavis* folder (where you can find logs and the config.json configuration file)  
 are copied to your *home* directory.
 
 .. figure:: figures/carta_open_successfully_mac.png     
@@ -103,7 +103,7 @@ For Ubuntu 17.04, 16.04 LTS::
   CARTA-0.9r-ubuntu/bin/carta.sh
 
 Now CARTA should be launched successfully. A *CARTA* folder with sample images 
-and a hidden *.cartavis* folder where you can find logs and configuration file 
+and a hidden *.cartavis* folder (where you can find logs and the config.json configuration file)  
 are copied to your *home* directory.
 
 .. figure:: figures/carta_open_successfully_linux.png
