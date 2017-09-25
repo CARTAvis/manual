@@ -93,10 +93,12 @@ To use a CARTA AppImage, download the appropriate version (RHEL 6/7 or Ubuntu):
 Make the AppImage executable::
 
   chmod 755 CARTA-0.9r-el6-el7.AppImage
+  chmod 755 CARTA-0.9r-ubuntu.AppImage
 
 and simply execute it::
 
   ./CARTA-0.9r-el6-el7.AppImage
+  ./CARTA-0.9r-ubuntu.AppImage
 
 
 Installing Python Interface
