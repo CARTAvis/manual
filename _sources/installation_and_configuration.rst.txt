@@ -7,8 +7,7 @@ CARTA-desktop supports two operating systems: macOS and CentOS/Ubuntu Linux. CAR
 with the additional capability of ``shared session``, only supports CentOS/Ubuntu Linux 
 operating system and is not publicly available. For people who want to use CARTA-server as the 
 user interface for their image archive, please contact carta_helpdesk@asiaa.sinica.edu.tw 
-for more information. CARTA-desktop can be retrieved at 
-https://github.com/CARTAvis/carta/releases/tag/v0.9
+for more information. CARTA-desktop can be retrieved at http://cartavis.github.io.
 
 macOS 
 -----
