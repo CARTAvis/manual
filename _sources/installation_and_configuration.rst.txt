@@ -187,7 +187,7 @@ A list of available plugins
 CARTA provides the following plugins (locate at the Plugins folder of CARTA directory):
 
 * ``casaCore``: Adds casa casacore shared libraries. NRAO CASA's version of the casacore 
-  libraries. Use its version around 9.19.2016.
+  libraries. 
 * ``CasaImageLoader``: Adds ability to load casa and fits files as 
   instances of the image interface class. Internally it uses casacore to do the work.
 * ``Colormaps1``: Set of basic colormaps implemented in c++.
@@ -197,7 +197,6 @@ CARTA provides the following plugins (locate at the Plugins folder of CARTA dire
 * ``ConversionSpectral``: Support for conversion of spectral units.
 * ``ConversionIntensity``: Provides conversion of intensity units.
 * ``ImageAnalysis``: Basic tools for analyzing images. NRAO's CASA image analysis tools. 
-  Use its version around 9.19.2016
 * ``ImageStatistics``: Provides basic image and region statistics. 
 * ``RegionCASA``: Adds ability to load casa region files as instances of the CARTA RegionInfo class.
   Parses region files based on the CASA region format.
@@ -211,7 +210,7 @@ CARTA provides the following plugins (locate at the Plugins folder of CARTA dire
   be specified via key in url. This key is then used to request the filename securely. 
 * ``DevIntegration``: Dev integration plugin. This allows insecurely specify a filename 
   to load via key in url.
-* ``PCacheSqlite3``: Implements persistent cache using QT's sqlite3 driver.
+* ``PCacheSqlite3``: Implements persistent cache using Qt's sqlite3 driver.
 
 
 Preference configuration
