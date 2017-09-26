@@ -65,6 +65,7 @@
 <li><a class="reference internal" href="#installing-python-interface">Installing Python Interface</a></li>
 <li><a class="reference internal" href="#configuring-carta">Configuring CARTA</a><ul>
 <li><a class="reference internal" href="#plugin-configuration">Plugin configuration</a></li>
+<li><a class="reference internal" href="#a-list-of-available-plugins">A list of available plugins</a></li>
 <li><a class="reference internal" href="#preference-configuration">Preference configuration</a></li>
 </ul>
 </li>
@@ -260,6 +261,38 @@ is located at:</p>
 </div>
 <p>If you want to disable a certain plugin, for example <code class="docutils literal"><span class="pre">PCacheSqlite3</span></code>,
 you can add <code class="docutils literal"><span class="pre">&quot;PCacheSqlite3&quot;</span></code> to the <code class="docutils literal"><span class="pre">&quot;disabledPlugins&quot;</span></code> list.</p>
+</div>
+<div class="section" id="a-list-of-available-plugins">
+<h3>A list of available plugins<a class="headerlink" href="#a-list-of-available-plugins" title="Permalink to this headline">¶</a></h3>
+<p>CARTA provides the following plugins (locate at the Plugins folder of CARTA directory):</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">casaCore</span></code>: Adds casa casacore shared libraries. NRAO CASA&#8217;s version of the casacore
+libraries. Use its version around 9.19.2016.</li>
+<li><code class="docutils literal"><span class="pre">CasaImageLoader</span></code>: Adds ability to load casa and fits files as
+instances of the image interface class. Internally it uses casacore to do the work.</li>
+<li><code class="docutils literal"><span class="pre">Colormaps1</span></code>: Set of basic colormaps implemented in c++.</li>
+<li><code class="docutils literal"><span class="pre">Fitter1D</span></code>: Fitting of one-dimensional curves. Fits Gaussian and polynomial curves to x-y plots.</li>
+<li><code class="docutils literal"><span class="pre">Histogram</span></code>: Generates a histogram of an image based on a region and a range of planes.</li>
+<li><code class="docutils literal"><span class="pre">WcsPlotter</span></code>: Plots WCS grids using starlink AST lib.</li>
+<li><code class="docutils literal"><span class="pre">ConversionSpectral</span></code>: Support for conversion of spectral units.</li>
+<li><code class="docutils literal"><span class="pre">ConversionIntensity</span></code>: Provides conversion of intensity units.</li>
+<li><code class="docutils literal"><span class="pre">ImageAnalysis</span></code>: Basic tools for analyzing images. NRAO&#8217;s CASA image analysis tools.
+Use its version around 9.19.2016</li>
+<li><code class="docutils literal"><span class="pre">ImageStatistics</span></code>: Provides basic image and region statistics.</li>
+<li><code class="docutils literal"><span class="pre">RegionCASA</span></code>: Adds ability to load casa region files as instances of the CARTA RegionInfo class.
+Parses region files based on the CASA region format.</li>
+<li><code class="docutils literal"><span class="pre">RegionDs9</span></code>: Adds ability to load ds9 region files as instances of the CARTA RegionInfo class.
+Parses region files based on the ds9 region format.</li>
+<li><code class="docutils literal"><span class="pre">ProfileCASA</span></code>: Generates the data for profiles of images.</li>
+<li><code class="docutils literal"><span class="pre">qimage</span></code>: Adds ability to load jpeg/png images (anything Qt supports).</li>
+<li><code class="docutils literal"><span class="pre">python273</span></code>: Loader of plugins written in Python.</li>
+<li><code class="docutils literal"><span class="pre">ColormapsPy</span></code>: Imports colormaps from matplotlib using python.</li>
+<li><code class="docutils literal"><span class="pre">CyberSKA</span></code>: CyberSKA integration plugin. Allows location of initial filename to
+be specified via key in url. This key is then used to request the filename securely.</li>
+<li><code class="docutils literal"><span class="pre">DevIntegration</span></code>: Dev integration plugin. This allows insecurely specify a filename
+to load via key in url.</li>
+<li><code class="docutils literal"><span class="pre">PCacheSqlite3</span></code>: Implements persistent cache using QT&#8217;s sqlite3 driver.</li>
+</ul>
 </div>
 <div class="section" id="preference-configuration">
 <h3>Preference configuration<a class="headerlink" href="#preference-configuration" title="Permalink to this headline">¶</a></h3>
