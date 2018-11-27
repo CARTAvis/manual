@@ -1,160 +1,22 @@
-.. _link_about_gui:
-
-========================
-Graphical User Interface
+Graphical user interface
 ========================
 
-CARTA provides the freedom to let users define customized layout with desired functionalities 
-suitable for their science need. There are also few pre-defined layouts for users to easily 
-switch in between. In this section, we will decompose the ideas of the GUI into three parts: 
-*Components*, *Layout*, and *Link Mechanism*. We end this section by giving a few customized 
-layouts in order to stimulate yours imaginations.
+
 
 Components
 ----------
 
-Once CARTA is launched, we should see a window like the following figure. The window consists of
-a *main working area* with a pre-defined layout, as well as *menu*, *tool*, and *status* bars. 
-The three bars can be hidden via *Preference* in the menu bar or via the right-click pop-up
-menu.
 
-.. figure:: figures/gui_components.png
 
-The content shown in the menu bar changes dynamically with the activated panel assigned to
-a specific functionality. The activated panel is highlighted with a box in cyan color. By
-default, the big panel on the left, which is assigned to ``imageViewer``, is activated. You
-are encouraged to click on different panels to see how the content of the menu bar changes. 
-Except *Session* and *Layout*, a pop-up list with other options in the menu bar can be triggered 
-by right-click on a panel.
+Layouts
+-------
 
-The tool bar provides handy buttons for two purposes: *color clipping* and *region of interests*.
-This bar is greyed out if the activated panel is not relevant to these two tools. For example, if 
-you click on the upper right panel (assigned to ``statistics``), the tool bar will be greyed out.
 
-The status bar reports messages if CARTA detects invalid input values. For example, if you change 
-value from 0 to 2 in the ``colormap`` shown in the middle right panel, a warning message in
-red color will be present in the status bar.
 
-.. figure:: figures/gui_status_bar_message.png
+Pre-defined layouts
+-------------------
 
 
-Layout
-------
 
-CARTA has four pre-defined layouts with groups of functionalities (accessible with the 
-dropdown menu in the menu bar):  
-
-(from top to bottom, left to right)
-
-* Default Layout: ``imageViewer``, ``statistics``, ``colormap``, ``animator``
-* LineAnalysis Layout: ``imageViewer``, ``profiler``, ``colormap``, ``animator``
-* HistogramAnalysis Layout: ``imageViewer``, ``histogram``, ``colormap``, ``animator``
-* Image Composite Layout: ``imageViewer``, ``imageContext``, ``imageZoom``, ``colormap``, ``animator``
-
-.. figure:: figures/layout_dropdown_menu.png
-   :width: 800 px
-
-For example, if you want to inspect the line profile of your target source, 
-*LineAnalysis Layout* should be the suitable layout.
-
-However, if none of the pre-defined layouts fits your science need, it is possible to
-create a customized layout in CARTA. To create a regular grid layout , e.g., two by two, 
-you can click the *Custom Layout* in the dropdown menu *Layout* of the menu bar. 
-
-.. figure:: figures/custom_layout_define.png
-   :width: 200 px
-
-To create a non-regular grid layout, like the following figure for example, you can start 
-with the *Default Layout* and use *Window* -> *Add* to divide the panels and use 
-*Window* -> *Remove* to merge panels.
-
-.. figure:: figures/gui_customized_layout.png
-   :width: 800 px
-
-.. figure:: figures/gui_customized_layout2.png
-   :width: 800 px
-
-With *Window* -> *Move*, the functionality of a panel can be transferred to a destination
-panel. This can be achieved by dragging an arrow from the blue circle to the black 
-circle. To confirm the action, click on the ``OK`` button. To cancel the action,
-press ``escape`` key. If the destination panel has undefined functionality, it will be
-assigned to the same functionality as the origin panel and the origin panel will 
-become undefined. If the destination panel has been assigned to a certain functionality,
-it will be *replaced* by the functionality of the origin panel and the origin panel
-becomes undefined. It is advised to use *Move* with caution since it is irreversible.
-
-.. figure:: figures/gui_move_panel.png
-
-A panel can be maximized or minimized via *Window* -> *Maximize* or *Minimize*. Use 
-*Window* -> *Restore* to restore a maximized panel. Minimized panel will become a button in the
-status bar (aligned to the right). Click on it to restore the panel. 
-
-To assign the functionality to each panel, click on a panel then click on the dropdown menu
-*View* in the menu bar to select a functionality. Or you can right-click on a panel and use the
-*View* menu to select a functionality.
-
-.. figure:: figures/gui_assign_fn.png
-   :width: 600 px
-
-
-
-
-Link Mechanism
---------------
-
-Suppose we have made a customized layout with a set of functionalities. Now we need to
-make these functionalities to work together. This is achieved by the *Link Mechanism* in CARTA.
-Right-click on the source panel and use *Links* to initiate the link operation. By drawing an arrow 
-from the source panel to the destination panel and press ``escape`` key to confirm, the destination 
-panel can communicate with the source panel. For example, once a link between the ``colormap`` panel and 
-``imageViewer`` panel has established, users can use ``colormap`` to change to coloring of the image shown
-in the ``imageViewer`` panel. Right-click on the blue circle allows users to remove the link between two
-panels.
-
-.. figure:: figures/gui_make_a_link.png
-
-Except the core functionality ``imageViewer`` itself, all other functionalities can link to ``imageViewer``.
-``colormap`` can link to ``histogram`` as well, providing color options to histogram. The following
-figure summarizes the link relationship of the current available functionalities. 
-
-.. figure:: figures/link_functionality.png
-   :width: 400 px
-
-
-
-Example layouts
----------------
-
-.. figure:: figures/carta_imageViewer_sideBySide.png
-
-.. figure:: figures/carta_demo_layout2.png
-
-.. figure:: figures/carta_demo_screenshot.png
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Controls and shortcuts
+----------------------

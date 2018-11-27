@@ -2,41 +2,28 @@
 
 <!doctype html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Installation and Configuration &#8212; CARTA 0.9 documentation</title>
-    
+    <title>Installation and configuration &#8212; CARTA 1.0alpha documentation</title>
     <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.9',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A Quick Hands-on" href="a_quick_hands_on.html" />
+    <link rel="next" title="Graphical user interface" href="about_gui.html" />
     <link rel="prev" title="Introduction" href="introduction.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -44,12 +31,12 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="a_quick_hands_on.html" title="A Quick Hands-on"
+          <a href="about_gui.html" title="Graphical user interface"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">CARTA 0.9 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">CARTA 1.0alpha documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -57,18 +44,11 @@
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/carta_logo_v2.png" alt="Logo"/>
             </a></p>
-  <h3><a href="index.html">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Installation and Configuration</a><ul>
-<li><a class="reference internal" href="#macos">macOS</a></li>
-<li><a class="reference internal" href="#linux">Linux</a></li>
-<li><a class="reference internal" href="#installing-python-interface">Installing Python Interface</a></li>
-<li><a class="reference internal" href="#configuring-carta">Configuring CARTA</a><ul>
-<li><a class="reference internal" href="#plugin-configuration">Plugin configuration</a></li>
-<li><a class="reference internal" href="#a-list-of-available-plugins">A list of available plugins</a></li>
-<li><a class="reference internal" href="#preference-configuration">Preference configuration</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Installation and configuration</a><ul>
+<li><a class="reference internal" href="#desktop-version">Desktop version</a></li>
+<li><a class="reference internal" href="#server-version">Server version</a></li>
 </ul>
 </li>
 </ul>
@@ -77,8 +57,8 @@
   <p class="topless"><a href="introduction.html"
                         title="previous chapter">Introduction</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="a_quick_hands_on.html"
-                        title="next chapter">A Quick Hands-on</a></p>
+  <p class="topless"><a href="about_gui.html"
+                        title="next chapter">Graphical user interface</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -88,12 +68,14 @@
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -105,224 +87,12 @@
           <div class="body" role="main">
             
   <div class="section" id="installation-and-configuration">
-<span id="link-installation-configuration"></span><h1>Installation and Configuration<a class="headerlink" href="#installation-and-configuration" title="Permalink to this headline">¶</a></h1>
-<p>CARTA-desktop supports two operating systems: macOS and CentOS/Ubuntu Linux. CARTA-server,
-with the additional capability of <code class="docutils literal"><span class="pre">shared</span> <span class="pre">session</span></code>, only supports CentOS/Ubuntu Linux
-operating system and is not publicly available. For people who want to use CARTA-server as the
-user interface for their image archive, please contact <a class="reference external" href="mailto:carta_helpdesk&#37;&#52;&#48;asiaa&#46;sinica&#46;edu&#46;tw">carta_helpdesk<span>&#64;</span>asiaa<span>&#46;</span>sinica<span>&#46;</span>edu<span>&#46;</span>tw</a>
-for more information. CARTA-desktop can be retrieved at <a class="reference external" href="https://cartavis.github.io">https://cartavis.github.io</a>.</p>
-<div class="section" id="macos">
-<h2>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
-<p>CARTA supports the latest three versions of macOS. Currently, they are</p>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">10.13</span> <span class="pre">High</span> <span class="pre">Sierra</span></code></li>
-<li><code class="docutils literal"><span class="pre">10.12</span> <span class="pre">Sierra</span></code></li>
-<li><code class="docutils literal"><span class="pre">10.11</span> <span class="pre">El</span> <span class="pre">Capitan</span></code></li>
-</ul>
-<p>Earlier versions may be supported, but they are not tested.</p>
-<p>To install CARTA on macOS, please follow the steps below:</p>
-<p>Step 1: Download CARTA at:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/download_0.9_mac.php">http://alma.asiaa.sinica.edu.tw/download_0.9_mac.php</a></li>
-<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r.dmg</a></li>
-</ul>
-<p>Step 2: Double click on the dmg file and drag the CARTA application to the <em>/Applications</em>
-folder on your Mac. You may install CARTA to a directory other than <em>/Applications</em>.</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/carta_drag_install.png"><img alt="_images/carta_drag_install.png" src="_images/carta_drag_install.png" style="width: 600px;" /></a>
+<h1>Installation and configuration<a class="headerlink" href="#installation-and-configuration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="desktop-version">
+<h2>Desktop version<a class="headerlink" href="#desktop-version" title="Permalink to this headline">¶</a></h2>
 </div>
-<p>Step 3: Double click on the CARTA icon in the /Applications directory to start CARTA.</p>
-<p>Now CARTA should be launched successfully. A <em>CARTA</em> folder with sample images
-and a hidden <em>.cartavis</em> folder (where you can find logs and the config.json configuration file)
-are copied to your <em>home</em> directory.</p>
-<div class="figure">
-<img alt="_images/carta_open_successfully_mac.png" src="_images/carta_open_successfully_mac.png" />
-</div>
-</div>
-<div class="section" id="linux">
-<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
-<p>CARTA supports the following Linux distributions:</p>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">7</span></code></li>
-<li><code class="docutils literal"><span class="pre">CentOS</span> <span class="pre">6</span> <span class="pre">/</span> <span class="pre">RHEL</span> <span class="pre">6</span></code></li>
-<li><code class="docutils literal"><span class="pre">Ubuntu</span> <span class="pre">17.04</span></code></li>
-<li><code class="docutils literal"><span class="pre">Ubuntu</span> <span class="pre">16.04</span> <span class="pre">LTS</span></code></li>
-</ul>
-<p>Other Linux distributions may be supported, but they are not tested.</p>
-<p>To install CARTA on Linux, please follow the steps below:</p>
-<p>Step 1: Download CARTA at:</p>
-<ul class="simple">
-<li>CentOS 7/6, RHEL 7/6<ul>
-<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/download_0.9_redhat.php">http://alma.asiaa.sinica.edu.tw/download_0.9_redhat.php</a></li>
-<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.tgz</a></li>
-</ul>
-</li>
-<li>Ubuntu 17.04, 16.04 LTS<ul>
-<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu.php">http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu.php</a></li>
-<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.tgz</a></li>
-</ul>
-</li>
-</ul>
-<p>Step 2: Extract the package.</p>
-<p>For CentOS 7/6, RHEL 7/6:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">tgz</span>
-</pre></div>
-</div>
-<p>For Ubuntu 17.04, 16.04 LTS:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">tgz</span>
-</pre></div>
-</div>
-<p>Step 3: Launch CARTA by executing <code class="docutils literal"><span class="pre">carta.sh</span></code>.</p>
-<p>For CentOS 7/6, RHEL 7/6:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
-</pre></div>
-</div>
-<p>For Ubuntu 17.04, 16.04 LTS:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">carta</span><span class="o">.</span><span class="n">sh</span>
-</pre></div>
-</div>
-<p>Now CARTA should be launched successfully. A <em>CARTA</em> folder with sample images
-and a hidden <em>.cartavis</em> folder (where you can find logs and the config.json configuration file)
-are copied to your <em>home</em> directory.</p>
-<div class="figure">
-<img alt="_images/carta_open_successfully_linux.png" src="_images/carta_open_successfully_linux.png" />
-</div>
-<p>For this release, we also provide the CARTA Linux versions as an <em>AppImage</em> (<a class="reference external" href="https://appimage.org">https://appimage.org</a>).
-AppImages have been gaining popularity on Linux in recent years. They are analagous to
-Applications on a Mac. They are a self-contained single file bundling the application
-itself and everything it needs to run on a system.</p>
-<p>To use a CARTA AppImage, download the appropriate version (CentOS 7/6 and RHEL 7/6,
-or Ubuntu 17.04, 16.04 LTS):</p>
-<ul class="simple">
-<li>For CentOS 7/6, RHEL 7/6<ul>
-<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/download_0.9_redhat_appimage.php">http://alma.asiaa.sinica.edu.tw/download_0.9_redhat_appimage.php</a></li>
-<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-el6-el7.AppImage</a></li>
-</ul>
-</li>
-<li>For Ubuntu 17.04, 16.04 LTS<ul>
-<li><a class="reference external" href="http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu_appimage.php">http://alma.asiaa.sinica.edu.tw/download_0.9_ubuntu_appimage.php</a></li>
-<li><a class="reference external" href="https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage">https://github.com/CARTAvis/carta/releases/download/v0.9/CARTA-0.9r-ubuntu.AppImage</a></li>
-</ul>
-</li>
-</ul>
-<p>Make the AppImage executable,</p>
-<p>For CentOS 7/6, RHEL 7/6:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
-</pre></div>
-</div>
-<p>For Ubuntu 17.04, 16.04 LTS:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
-</pre></div>
-</div>
-<p>and simply execute it.</p>
-<p>For CentOS 7/6, RHEL 7/6:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">el6</span><span class="o">-</span><span class="n">el7</span><span class="o">.</span><span class="n">AppImage</span>
-</pre></div>
-</div>
-<p>For Ubuntu 17.04, 16.04 LTS:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">CARTA</span><span class="o">-</span><span class="mf">0.9</span><span class="n">r</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">AppImage</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="installing-python-interface">
-<h2>Installing Python Interface<a class="headerlink" href="#installing-python-interface" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/TBA.png"><img alt="_images/TBA.png" src="_images/TBA.png" style="width: 300px;" /></a>
-</div>
-</div>
-<div class="section" id="configuring-carta">
-<span id="link-configuring-carta"></span><h2>Configuring CARTA<a class="headerlink" href="#configuring-carta" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="plugin-configuration">
-<h3>Plugin configuration<a class="headerlink" href="#plugin-configuration" title="Permalink to this headline">¶</a></h3>
-<p>CARTA is built on a <em>plugin</em> model and can be configured by a <code class="docutils literal"><span class="pre">json</span></code> file if desired. The default
-plugin configuration should work for most of users. The plugin configuration file
-is located at:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">your</span> <span class="n">home</span><span class="o">&gt;/.</span><span class="n">cartavis</span><span class="o">/</span><span class="n">config</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
-<p>and the default plugin configuration looks like:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;_comment&quot;</span> <span class="p">:</span> <span class="s2">&quot;List of plugin directories&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pluginDirs&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="s2">&quot;$(APPDIR)/../plugins&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;$(APPDIR)/../../../../plugins&quot;</span>
-  <span class="p">],</span>
-  <span class="s2">&quot;disabledPlugins&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span>
-  <span class="s2">&quot;plugins&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;PCacheSqlite3&quot;</span> <span class="p">:</span> <span class="p">{</span>
-          <span class="s2">&quot;dbPath&quot;</span><span class="p">:</span> <span class="s2">&quot;$(HOME)/CARTA/cache/pcache.sqlite&quot;</span>
-      <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="s2">&quot;qtDecorations&quot;</span> <span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;percentileApproximation&quot;</span> <span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;percentApproxDividedNum&quot;</span> <span class="p">:</span> <span class="mi">1000000</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>If you want to disable a certain plugin, for example <code class="docutils literal"><span class="pre">PCacheSqlite3</span></code>,
-you can add <code class="docutils literal"><span class="pre">&quot;PCacheSqlite3&quot;</span></code> to the <code class="docutils literal"><span class="pre">&quot;disabledPlugins&quot;</span></code> list.</p>
-</div>
-<div class="section" id="a-list-of-available-plugins">
-<h3>A list of available plugins<a class="headerlink" href="#a-list-of-available-plugins" title="Permalink to this headline">¶</a></h3>
-<p>CARTA provides the following plugins (locate at the Plugins folder of CARTA directory):</p>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">casaCore</span></code>: Adds casa casacore shared libraries. NRAO CASA&#8217;s version of the casacore
-libraries.</li>
-<li><code class="docutils literal"><span class="pre">CasaImageLoader</span></code>: Adds ability to load casa and fits files as
-instances of the image interface class. Internally it uses casacore to do the work.</li>
-<li><code class="docutils literal"><span class="pre">Colormaps1</span></code>: Set of basic colormaps implemented in c++.</li>
-<li><code class="docutils literal"><span class="pre">Fitter1D</span></code>: Fitting of one-dimensional curves. Fits Gaussian and polynomial curves to x-y plots.</li>
-<li><code class="docutils literal"><span class="pre">Histogram</span></code>: Generates a histogram of an image based on a region and a range of planes.</li>
-<li><code class="docutils literal"><span class="pre">WcsPlotter</span></code>: Plots WCS grids using starlink AST lib.</li>
-<li><code class="docutils literal"><span class="pre">ConversionSpectral</span></code>: Support for conversion of spectral units.</li>
-<li><code class="docutils literal"><span class="pre">ConversionIntensity</span></code>: Provides conversion of intensity units.</li>
-<li><code class="docutils literal"><span class="pre">ImageAnalysis</span></code>: Basic tools for analyzing images. NRAO&#8217;s CASA image analysis tools.</li>
-<li><code class="docutils literal"><span class="pre">ImageStatistics</span></code>: Provides basic image and region statistics.</li>
-<li><code class="docutils literal"><span class="pre">RegionCASA</span></code>: Adds ability to load casa region files as instances of the CARTA RegionInfo class.
-Parses region files based on the CASA region format.</li>
-<li><code class="docutils literal"><span class="pre">RegionDs9</span></code>: Adds ability to load ds9 region files as instances of the CARTA RegionInfo class.
-Parses region files based on the ds9 region format.</li>
-<li><code class="docutils literal"><span class="pre">ProfileCASA</span></code>: Generates the data for profiles of images.</li>
-<li><code class="docutils literal"><span class="pre">qimage</span></code>: Adds ability to load jpeg/png images (anything Qt supports).</li>
-<li><code class="docutils literal"><span class="pre">python273</span></code>: Loader of plugins written in Python.</li>
-<li><code class="docutils literal"><span class="pre">ColormapsPy</span></code>: Imports colormaps from matplotlib using python.</li>
-<li><code class="docutils literal"><span class="pre">CyberSKA</span></code>: CyberSKA integration plugin. Allows location of initial filename to
-be specified via key in url. This key is then used to request the filename securely.</li>
-<li><code class="docutils literal"><span class="pre">DevIntegration</span></code>: Dev integration plugin. This allows insecurely specify a filename
-to load via key in url.</li>
-<li><code class="docutils literal"><span class="pre">PCacheSqlite3</span></code>: Implements persistent cache using Qt&#8217;s sqlite3 driver.</li>
-</ul>
-</div>
-<div class="section" id="preference-configuration">
-<h3>Preference configuration<a class="headerlink" href="#preference-configuration" title="Permalink to this headline">¶</a></h3>
-<p>CARTA provides the following user configurable options:</p>
-<ul>
-<li><p class="first">percentile approximation:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;percentileApproximation&quot;</span> <span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
-<span class="s2">&quot;percentApproxDividedNum&quot;</span> <span class="p">:</span> <span class="mi">1000000</span>
-</pre></div>
-</div>
-<p>By default, CARTA adopts an approximation algorithm to find the clipping values
-in the image cube in order to provide good performance for big image cube. Note that
-with this approximation algorithm (1000000 histogram bins), the bounding values of a
-certain clipping percentage may differ a bit from the exact values.</p>
-</li>
-<li><p class="first">sqlite cache:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;PCacheSqlite3&quot;</span> <span class="p">:</span> <span class="p">{</span><span class="s2">&quot;dbPath&quot;</span><span class="p">:</span> <span class="s2">&quot;$(HOME)/CARTA/cache/pcache.sqlite&quot;</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>CARTA adopts sqlite database to cache data values in order to enhance performance.
-For example, the minimum and maximum values of a certain image cube will be cached
-in sqlite database so that when this image cube is opened for the second time, the
-step of finding minimum and maximum values is skipped (usually very expensive for big
-image cubes). Note that currently CARTA uses the file name of the image as the key in
-sqlite database. Therefore, the cached values are not applicable to a totally different
-image with an identical file name. Users may manually remove the cache at
-&lt;your home&gt;/CARTA/cache/pcache.sqlite. CARTA team will improve this aspect in the
-near future.</p>
-</li>
-</ul>
-</div>
+<div class="section" id="server-version">
+<h2>Server version<a class="headerlink" href="#server-version" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -339,17 +109,17 @@ near future.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="a_quick_hands_on.html" title="A Quick Hands-on"
+          <a href="about_gui.html" title="Graphical user interface"
              >next</a> |</li>
         <li class="right" >
           <a href="introduction.html" title="Introduction"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">CARTA 0.9 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">CARTA 1.0alpha documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, the CARTA team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+        &#169; Copyright 2018, CARTA working group.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
     </div>
   </body>
 </html>
