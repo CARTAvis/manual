@@ -1,9 +1,0 @@
-.. _link_functionalities_python:
-
-========================
-Functionalities - Python
-========================
-
-.. figure:: figures/TBA.png
-   :width: 300 px
-
