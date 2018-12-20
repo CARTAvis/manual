@@ -2,12 +2,48 @@
 
 Installation and configuration
 ==============================
+CARTA suppurts two distributions, CARTA-server and CARTA-desktop. For users using a laptop or a desktop connected with a monitor, please download the CARTA-desktop version. For users using a remote server via the ssh protocol, please download the CARTA-server version. 
 
 
 Desktop version
 ---------------
 
+macOS 10.12/10.13/10.14
+^^^^^^^^^^^^^^^^^^^^^^^
+Please follow the steps:
+
+1. Download the package at xxx
+2. xxx
+
+Redhat 6/7, CentOS 6/7
+^^^^^^^^^^^^^^^^^^^^^^
+Please follow the steps:
+
+1. Download the package at xxx
+2. xxx
+
+Ubuntu 16.04 LTS/18.04 LTS
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please follow the steps:
+
+1. Download the package at xxx
+2. xxx
+
 
 
 Server version
 --------------
+
+Redhat 6/7, CentOS 6/7
+^^^^^^^^^^^^^^^^^^^^^^
+Please follow the steps:
+
+1. Download the package at xxx
+2. xxx
+
+Ubuntu 16.04 LTS/18.04 LTS
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please follow the steps:
+
+1. Download the package at xxx
+2. xxx
