@@ -2,11 +2,11 @@
 
 Installation and configuration
 ==============================
-CARTA suppurts two distributions, CARTA-server and CARTA-desktop. For users using a laptop or a desktop connected with a monitor, please download the CARTA-desktop version. For users using a remote server via the ssh protocol, please download the CARTA-server version. 
+CARTA suppurts two use cases in this desktop v1.0 release. For users using a laptop or a desktop connected with a monitor, please download the "Local" version. For users using a remote server via the ssh protocol, please download the "Remote" version. If there is any problem, please contact `CARTA Helpdesk <carta_helpdesk@asiaa.sinica.edu.tw>`_ for help.
 
 
-Desktop version
----------------
+Local version
+-------------
 
 macOS 10.12/10.13/10.14
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,7 +31,7 @@ Please follow the steps:
 
 
 
-Server version
+Remote version
 --------------
 
 Redhat 6/7, CentOS 6/7

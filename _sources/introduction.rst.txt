@@ -33,6 +33,10 @@ The release plan and major goals are the following:
 * Version 1.7+: misc.
 
 
+Getting help
+------------
+The CARTA team welcomes any suggestion, feature request, or bug report, to make CARTA better via the `CARTA Helpdesk <carta_helpdesk@asiaa.sinica.edu.tw>`_.
+
 
 
 Contributors
@@ -51,8 +55,8 @@ The development of the CARTA project is a joint effort from (in alphabetical ord
         style="width:100%;height:auto;">
 
 
-Acknowledgements
-----------------
+Acknowledgement
+---------------
 ASIAA CASA Development Center (ACDC) acknowledges the grant from the Ministry of Science and Technology of Taiwan for the ALMA-NA collaboration.
 
 The Inter-University Institute for Data Intensive Astronomy is a partnership of three South African universities: the University of Cape Town, the University of the Western Cape and the University of Pretoria.
