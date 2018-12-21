@@ -2,7 +2,7 @@
 
 Installation and configuration
 ==============================
-CARTA suppurts two use cases in this desktop v1.0 release. For users using a laptop or a desktop connected with a monitor, please download the "Local" version. For users using a remote server via the ssh protocol, please download the "Remote" version. If there is any problem, please contact `CARTA Helpdesk <carta_helpdesk@asiaa.sinica.edu.tw>`_ for help.
+CARTA supports two use cases in this desktop v1.0 release. For users using a laptop or a desktop connected with a monitor, please download the "Local" version. For users using a remote server via the ssh protocol, please download the "Remote" version. If there is any problem, please contact `CARTA Helpdesk <carta_helpdesk@asiaa.sinica.edu.tw>`_ for help.
 
 
 Local version
